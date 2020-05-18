@@ -1,5 +1,14 @@
+appdirs==1.4.4
 certifi==2020.4.5.1
 chardet==3.0.4
+distlib==0.3.0
+emoji==0.5.4
+filelock==3.0.12
 idna==2.9
+pyTelegramBotAPI==3.7.1
+rawgpy==1.0.3
 requests==2.23.0
+six==1.14.0
+tmdbv3api==1.5.1
 urllib3==1.25.9
+virtualenv==20.0.20
