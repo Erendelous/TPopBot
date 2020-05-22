@@ -20,9 +20,6 @@ keyboard1.row(emojize(":tv:", use_aliases=True)+'TV', emojize(":clapper:", use_a
 bot=telebot.TeleBot('1073454302:AAFv-PeU0GtPoYqY4Ghh7vtbO1r5GquKZG8')
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Привет, ты написал мне /start', reply_markup=keyboard1)
-@bot.message_handler(commands=['start'])
-def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start\nДля того, чтобы найти фильм, введи FILM и название фильма\nДля того, чтобы найти сериал, введи TV и название сериала')
 @bot.message_handler()
 def send_text(message):
