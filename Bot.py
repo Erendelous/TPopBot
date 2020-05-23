@@ -11,13 +11,13 @@ f = False
 t = False
 g = False
 tmdb = TMDb()
-tmdb.api_key = '21d048a03d422d6993fd4e168b353f2b'
+tmdb.api_key = ''
 movie = Movie()
 tv = TV()
 
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard1.row(emojize(":tv:", use_aliases=True)+'TV', emojize(":clapper:", use_aliases=True)+'Film', emojize(":video_game:",use_aliases=True)+'Game')
-bot=telebot.TeleBot('1073454302:AAFv-PeU0GtPoYqY4Ghh7vtbO1r5GquKZG8')
+bot=telebot.TeleBot('')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start\nДля того, чтобы найти фильм, введи FILM и название фильма\nДля того, чтобы найти сериал, введи TV и название сериала')
